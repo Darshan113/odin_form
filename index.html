@@ -7,7 +7,107 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+
+        <div class="left-section">
+          <p class="name">Darshan Panchal</p>
+          <p class="footer">Photo By <span>Darsh</span></p>
+        </div>
+
+        <div class="right-section">
+
+          <div class="header">
+            <p class="info">
+              This is not a real online service! Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Necessitatibus, commodi!
+            </p>
+            <p class="signup">Sign up now to get started</p>
+            <p class="action">You <i>know</i> you want to.</p>
+          </div>
+
+          <form action="" id="form">
+            <div class="form-section">
+              <p>Lets do this!</p>
+              <div class="elements">
+                <div class="form-group">
+                  <label for="first_name">firstName</label>
+                  <input
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    placeholder="John"
+                  />
+                  <small></small>
+                </div>
+                <div class="form-group">
+                  <label for="last_name">lastName</label>
+                  <input
+                    type="text"
+                    id="last_name"
+                    name="last_name"
+                    placeholder="Doe"
+                  />
+                  <small></small>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"
+                  />
+                  <small></small>
+                </div>
+                <div class="form-group">
+                  <label for="phone_number">Phone</label>
+                  <input
+                    type="text"
+                    id="phone_number"
+                    name="phone_number"
+                    placeholder="Enter Phone No."
+                    pattern="^[789]\d{9}$"
+                  />
+                  <small></small>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Set Password"
+                    minlength="8"
+                  />
+                  <small></small>
+                </div>
+                <div class="form-group">
+                  <label for="confirm_password">confirmPassword</label>
+                  <input
+                    type="password"
+                    id="confirm_password"
+                    name="confirm_password"
+                    placeholder="Confirm Password"
+                    minlength="8"
+                  />
+                  <small></small>
+                </div>
+              </div>
+            </div>
+
+            <div class="submit-section">
+              <button type="submit">Create Account</button>
+            </div>
+
+          </form>
+
+          <div class="login">
+            <p>Already have an account? <span>Log in</span></p>
+          </div>
+
+        </div>
+      </div>
+  
 
     <script src="main.js"></script>
 </body>
