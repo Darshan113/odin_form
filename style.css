@@ -1,10 +1,157 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    }
+
+/* ------  container css   ------  */
+
+    .container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    }
+
+/* ------  left section css   ------  */
+
+    .left-section {
+    flex: 40%;
+    background: url(assets/img.avif) no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+
+    .left-section .name {
+    position: absolute;
+    top: 20%;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 11;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 0;
+    }
+
+    .left-section .footer {
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    z-index: 9999;
+    }
+
+    .footer span {
+    text-decoration: underline;
+    }
+                        
+/* ------  right section css   ------  */
+
+    .right-section {
+    flex: 60%;
+    background-color: #f2f2f2;
+    }
+
+        /* ------  header css   ------  */
+        .header {
+        padding: 1rem 2rem;
+        width: 90%;
+        font-size: 1.1rem;
+        }
+
+        .action {
+        margin: 2rem 0 3.5rem 0;
+        }
+
+        /* ------  form-section css   ------  */
+        .form-section {
+        background-color: white;
+        box-shadow: 1px 1px 5px 0px gray;
+        padding: 1rem 2rem;
+        }
+
+        .form-section p {
+        font-size: 1.2rem;
+        }
+        .elements {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 80%;
+        padding: 1rem 0;
+        }
+
+        .form-group {
+        flex: 1 1 calc(40% - 10px);
+        display: flex;
+        flex-flow: column wrap;
+        }
+
+        input {
+        padding: 0.5rem 1rem;
+        border: 1px solid gray;
+        border-radius: 5px;
+        font-size: 1rem;
+        }
+
+        input:focus {
+        border-color: blue;
+        outline: none;
+        box-shadow: 1px 1px 3px 0 gray;
+        }
+
+        input:-webkit-autofill {
+        transition: background-color 9999s ease-in-out 1s, color 9999s ease-in-out 1s;
+        }
+
+        /* ------  submit-section css   ------  */
+        .submit-section {
+        padding: 1rem 2rem;
+        }
+
+        .submit-section button {
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(20, 58, 20);
+        color: whitesmoke;
+        font-size: 1.2rem;
+        }
+
+        button:hover {
+        cursor: pointer;
+        }
+
+        /* ------  dont have account section css   ------  */
+        .login {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        }
+
+        .login p span {
+        color: rgb(20, 58, 20);
+        font-weight: bold;
+        }
+
+        /* validation */
+        .success {
+        border-color: green;
+        }
+
+        .error {
+        border-color: crimson;
+        }
+
+        small {
+        color: crimson;
+        }
